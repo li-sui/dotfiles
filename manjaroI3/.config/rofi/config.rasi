@@ -4,7 +4,6 @@
  * Based on OneDark.vim (https://github.com/joshdick/onedark.vim)
  *
  * Author: Benjamin Stauss
- * User: me-benni
  *
  */
 
@@ -31,7 +30,7 @@
 }
 
 window {
-  transparency: "real";
+  transparency: "screenshot";
   fullscreen: true;
   background-color: #282c34dd;
 }
