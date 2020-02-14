@@ -1,0 +1,36 @@
+command=/usr/share/i3blocks/$BLOCK_NAME
+
+[memory]
+label=MEM
+command=free -h | awk 'match($0, /^Mem/){print $3 "/" $2}'
+interval=5
+
+[cpu_usage]
+label=CPU
+interval=10
+
+[temperature]
+label=🔥
+interval=10
+
+[disk]
+label=📁
+instance=/home
+interval=60
+
+[volume]
+label=🔊
+instance=Master
+interval=1
+signal=10
+
+[date]
+label=📆
+command=date +'%d/%m(%a) %H:%M'
+interval=60
+
+[battery]
+command=~/.config/i3blocks/battery.sh
+interval=10
+
+

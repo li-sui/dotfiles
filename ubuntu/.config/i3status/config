@@ -1,0 +1,65 @@
+##Li's personal i3status
+
+general {
+	colors = true
+	color_good = "#BBBBBB"
+	color_bad = "#CC1616"
+	color_degraded = "#55858E"
+	interval = 2
+}
+order += "wireless wlp82s0"
+order += "cpu_usage"
+
+order += "cpu_temperature 0"
+order += "disk /"
+order += "battery 0"
+order += "volume master"
+order += "time"
+
+cpu_usage {
+	format = "🖥:%usage "
+}
+
+cpu_temperature 0 {
+	format = " 🔥:%degrees°C"
+}
+
+
+disk "/" {
+	format = "📂:%avail" 
+}
+
+
+battery 0 {
+        format = "%status %percentage"
+        format_down = "No battery"
+        status_chr = "🔌CHR"
+        status_bat = "🔋BAT"
+        status_unk = "🔋"
+        status_full = "🔋"
+        path = "/sys/class/power_supply/BAT0/uevent"
+        low_threshold = 10
+}
+ wireless wlp82s0{
+	format_up = " 🌏%essid :%quality"
+	format_down = " 🌐 WiFi "
+}
+volume master {
+    format = "🔊: %volume"
+    format_muted = "🔇: 0%%"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+#ethernet eth0 {
+#	format_up =  " Ω: %ip  "
+#	format_down = " ∅ eth0  "
+#	format_up =  " ­ %ip "
+#	format_down = " Ð eth0 "
+#}
+
+
+time {
+    format = "📆%a, %d %b %Y %H:%M:%S "
+}
