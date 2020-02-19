@@ -29,7 +29,7 @@ Xft.lcdfilter: lcddefault
 *.color15:    #E6E6E6
 !--------------------------------
 
-URxvt.font:                     xft:DejaVu Sans Mono for Powerline:size=12
+URxvt.font:                       xft:DejaVu Sans Mono for Powerline:size=12
 
 URxvt.depth:                      32
 URxvt*scrollBar:                  false
