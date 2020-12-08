@@ -34,3 +34,4 @@ command=~/.config/i3blocks/battery.sh
 interval=10
 
 
+

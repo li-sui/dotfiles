@@ -11,9 +11,8 @@ There is a problem with Ubuntu18.04(linux kernel 5.0),My thinkpad wireless adapt
 
 - clipit
 - sublime
-- atom
 - simplescreenrecorder
-- i3
+- i3-gaps
 - i3blocks (i3 status bar)
 - Google Chrome
 - git
