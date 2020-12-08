@@ -25,7 +25,7 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "JetBrains Mono Medium 14";
+  font: "DroidSansMono Nerd Font Book 14";
   text-color: @text;
 }
 
