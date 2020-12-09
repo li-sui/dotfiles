@@ -12,6 +12,10 @@ Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'andymass/vim-matchup'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim' "-------------------------------------------- fzf in vim
 call plug#end()
 
 " Theme
