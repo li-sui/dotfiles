@@ -16,6 +16,7 @@ There is a problem with Ubuntu18.04(linux kernel 5.0),My thinkpad wireless adapt
 - i3blocks (i3 status bar)
 - Google Chrome
 - git
+- vim
 - Mercurial
 - Intellij IDEA
 - rangers
