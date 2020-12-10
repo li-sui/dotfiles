@@ -23,6 +23,9 @@ syntax on
 colorscheme purify
 let g:airline_theme='purify'
 
+" font
+set guifont=DroidSansMono\ Nerd\ Font\ 14
+
 " enable linenumber
 set number
 
