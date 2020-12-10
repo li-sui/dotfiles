@@ -3,8 +3,8 @@ set $mod Mod4
 # #---Basic Definitions---# #
 smart_gaps on
 smart_borders on
-set $inner_gaps 15
-set $outer_gaps 15
+set $inner_gaps 10
+set $outer_gaps -5
 #set $shutdown sudo -A shutdown -h now
 #set $reboot sudo -A reboot
 set $lock i3lock
@@ -34,13 +34,7 @@ font pango:monospace 12
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -188,6 +182,12 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 # nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -224,10 +224,10 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
-bar {
-    status_command i3blocks
-    separator_symbol ":|:"
-    strip_workspace_numbers yes
-    binding_mode_indicator yes
-    tray_padding 0
-}
+#bar {
+#    status_command i3blocks
+#    separator_symbol ":|:"
+#    strip_workspace_numbers yes
+#    binding_mode_indicator yes
+#    tray_padding 0
+#}
