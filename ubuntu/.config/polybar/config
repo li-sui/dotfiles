@@ -611,7 +611,7 @@ spacing = 4
 format-mounted = <label-mounted>
 format-mounted-foreground = #fefefe
 format-mounted-background = #8d62ad
-format-mounted-underline = #fefefe
+;format-mounted-underline = #fefefe
 
 
 ; Available tokens:
