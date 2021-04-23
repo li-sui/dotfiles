@@ -187,11 +187,11 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 #polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#auto start: workspace1:web browser, workspace2:file manger, workspace3: terminal, workspace4:text editor
+#auto start: workspace1:file manger, workspace2: terminal, workspace3:text editor
 #exec --no-startup-id i3-msg 'workspace 1; exec google-chrome-stable'
-#exec --no-startup-id i3-msg 'workspace 2; exec nautilus'
-#exec --no-startup-id i3-msg 'workspace 3; exec i3-sensible-terminal'
-#exec --no-startup-id i3-msg 'workspace 4; exec subl'
+exec --no-startup-id i3-msg 'workspace 1; exec nautilus'
+exec --no-startup-id i3-msg 'workspace 2; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace 3; exec subl'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
